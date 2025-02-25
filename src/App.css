@@ -11,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -40,3 +42,109 @@
 .read-the-docs {
   color: #888;
 }
+
+
+
+/* Avatar Container */
+.profile-avatar-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.add-item-button {
+  margin: 20px;
+}
+
+/* Delete Button */
+.delete-item-button {
+  color: red;
+}
+
+/* Dialog Styling */
+.dialog-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dialog-textfield {
+  margin-bottom: 10px;
+}
+
+.dialog-button {
+  margin-top: 10px;
+}
+
+/* Snackbar Styling */
+.snackbar-alert {
+  font-size: 16px;
+}
+
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+}
+
+.add-item-button {
+  margin: 16px;
+}
+
+.list-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.list-item-avatar {
+  margin-right: 16px;
+}
+
+.list-item-text {
+  flex: 1;
+}
+
+.delete-item-button {
+  margin-left: 16px;
+  color: #f44336;
+}
+
+/* Dialog Styles */
+.dialog-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dialog-textfield {
+  width: 100%;
+}
+
+.dialog-button {
+  margin-top: 16px;
+}
+
+/* Snackbar Styles for Error Messages */
+.snackbar {
+  width: 100%;
+}
+
+.snackbar-alert {
+  background-color: #f44336;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
