@@ -5,7 +5,8 @@ const schema = a.schema({
     .model({
       username: a.string().required(), 
       email: a.string().required(), 
-      avatar: a.string(), 
+      avatar: a.string(),
+      studentId: a.string().required(), // Add this field
       items: a.hasMany("Item", "studentId"), 
     })
     .authorization(allow => [allow.owner()]),
@@ -15,7 +16,8 @@ const schema = a.schema({
       title: a.string().required(),
       description: a.string(),
       cost: a.float().required(),
-      image: a.string(), 
+      image: a.string(),
+      studentId: a.string(), // Add this field
       student: a.belongsTo("Student", "studentId"),
     })
     .authorization(allow => [allow.owner()]),
