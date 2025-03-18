@@ -11,8 +11,6 @@ frontend:
       commands:
         - nvm use 20
         - npm ci
-frontend:
-  phases:
     build:
       commands:
         - npm run build
@@ -22,5 +20,4 @@ frontend:
       - '**/*'
   cache:
     paths:
-      - .npm/**/*
       - node_modules/**/*
