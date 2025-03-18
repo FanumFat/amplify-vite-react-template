@@ -6,7 +6,7 @@ const schema = a.schema({
       username: a.string().required(), 
       email: a.string().required(), 
       avatar: a.string(), 
-      items: a.hasMany("Item", "studentId"), // Explicitly defining the relation field
+      items: a.hasMany("Item", "studentId"), 
     })
     .authorization(allow => [allow.owner()]),
 
@@ -16,7 +16,7 @@ const schema = a.schema({
       description: a.string(),
       cost: a.float().required(),
       image: a.string(), 
-      student: a.belongsTo("Student", "studentId"), // Correcting the belongsTo relationship
+      student: a.belongsTo("Student", "studentId"),
     })
     .authorization(allow => [allow.owner()]),
 });
