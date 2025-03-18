@@ -27,7 +27,6 @@ function AppContent() {
 
   return (
     <BrowserRouter>
-      {/* Fixed AppBar */}
       <AppBar position="fixed" color="primary">
         <Toolbar>
           <IconButton edge="start" color="inherit" onClick={handleMenuOpen}>
@@ -39,7 +38,6 @@ function AppContent() {
         </Toolbar>
       </AppBar>
 
-      {/* Dropdown Menu */}
       <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleMenuClose}>
         <MenuItem component={Link} to="/profile" onClick={handleMenuClose} style={{ color: "blue" }}>
           Student Profile
@@ -58,7 +56,6 @@ function AppContent() {
         </MenuItem>
       </Menu>
 
-      {/* Main Content Area */}
       <div style={{ marginTop: 64 }}>
         <Routes>
           <Route path="/profile" element={<StudentProfile />} />
